@@ -22,7 +22,7 @@ jobs:
           file: "Dockerfile.dev"
           tags: "local-SNAPSHOT"
           push: false
-      - run: Run Docker image
+      - name: Run Docker image
         uses: addnab/docker-run-action@v3
         with:
           image: local-SNAPHOT
