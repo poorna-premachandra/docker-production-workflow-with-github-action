@@ -29,5 +29,5 @@ jobs:
         uses: addnab/docker-run-action@v3
         with:
           image: local-image:latest
-          run: npm run test
+          run: CI=true npm run test
       - run: echo "This job's status is ${{ job.status }}."
