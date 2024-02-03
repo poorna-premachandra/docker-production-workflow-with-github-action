@@ -20,11 +20,11 @@ jobs:
         with:
           context: .
           file: "Dockerfile.dev"
-          tags: "local-SNAPSHOT"
+          tags: local-image:latest
           push: false
       - name: Run Docker image
         uses: addnab/docker-run-action@v3
         with:
-          image: local-SNAPHOT
+          image: local-image:latest
           run: npm run test
       - run: echo "This job's status is ${{ job.status }}."
