@@ -21,7 +21,10 @@ jobs:
           context: .
           file: "Dockerfile.dev"
           tags: local-image:latest
+          load: true
           push: false
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
       - name: Run Docker image
         uses: addnab/docker-run-action@v3
         with:
