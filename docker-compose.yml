@@ -1,19 +1,8 @@
 version: '3'
 services:
-  web-app:
-    build: 
+  web:
+    build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
     ports:
-      - "3000:3000"
-    volumes:
-      - /app/node_modules
-      - .:/app
-  tests:  #However, we still can't give inputs from our terminal to the container(e.g. - to re run tests). Even if we manually used 'docker attach' command, it couldn't be achieved.
-    build: 
-      context: .
-      dockerfile: Dockerfile.dev
-    volumes:
-      - /app/node_modules
-      - .:/app
-    command: ["npm", "run", "test"]
+      - '80:80'
