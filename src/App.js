@@ -10,7 +10,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload. I am changed
         </p>
         <p>I'm deployed through AWS Elastic Beanstalk after merging with Master branch</p>
-        <p>Test 2</p>
+        <p>Test 3</p>
         <a
           className="App-link"
           href="https://reactjs.org"
