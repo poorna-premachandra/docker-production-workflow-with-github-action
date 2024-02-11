@@ -1,3 +1,3 @@
 # docker-production-workflow-with-github-action
 
-CI/ CD workflow configured with Docker and Github Action.
+The project leverages Docker, Nginx, GitHub Actions, and AWS Elastic Beanstalk to establish a complete CI/CD pipeline.
